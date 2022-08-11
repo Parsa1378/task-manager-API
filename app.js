@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express()
 const tasks = require('./routes/tasks');
-const port = 8080;
+const port = process.env.PORT || 8080;
 const connectDB = require('./controller/db/connect');
 
 
