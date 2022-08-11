@@ -9,7 +9,7 @@ const connectDB = require('./controller/db/connect');
 //middleware
 app.use(express.json());
 
-app.use('/api/v1/tasks/', tasks);
+app.use('/api/v1/tasks', tasks);
 
 const start = async() => {
     try {
